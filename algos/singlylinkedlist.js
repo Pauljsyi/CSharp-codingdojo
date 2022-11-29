@@ -41,6 +41,51 @@ class SinglyLinkedList {
     this.head = null;
   }
 
+  // 11/29
+
+  /**
+   * Creates a new node with the given data and inserts that node at the front
+   * of this list.
+   * - Time: (?).
+   * - Space: (?).
+   * @param {any} data The data for the new node.
+   * @returns {SinglyLinkedList} This list.
+   */
+  insertAtFront(data) {
+    const newNode = new ListNode(data);
+    newNode.next = this.head;
+    this.head = newNode;
+    return this;
+  }
+
+  /**
+   * Removes the first node of this list.
+   * - Time: (?).
+   * - Space: (?).
+   * @returns {any} The data from the removed node.
+   */
+  removeHead() {
+    if (this.head === null) {
+      const newNode = new ListNode(data);
+      this.head = newNode;
+      return this;
+    }
+    let temp = this.head.data;
+    this.head = this.head.next;
+    return temp;
+  }
+
+  // EXTRA
+  /**
+   * Calculates the average of this list.
+   * - Time: (?).
+   * - Space: (?).
+   * @returns {number|NaN} The average of the node's data.
+   */
+  average() {}
+
+  // 11/28
+
   /**
    * Determines if this list is empty.
    * - Time: O(?).
@@ -87,6 +132,11 @@ class SinglyLinkedList {
    * @returns {SinglyLinkedList} This list.
    */
   insertAtBackRecursive(data, runner = this.head) {
+    if (this.isEmpty()) {
+      this.head = new ListNode(data);
+      return this;
+    }
+
     if (runner === null) {
       const newNode = new ListNode(data);
       runner.next = newNode;
@@ -139,17 +189,16 @@ after completing it, uncomment the code.
 */
 const emptyList = new SinglyLinkedList();
 
-// const singleNodeList = new SinglyLinkedList().insertAtBackMany([1]);
-// const biNodeList = new SinglyLinkedList().insertAtBackMany([1, 2]);
-// const firstThreeList = new SinglyLinkedList().insertAtBackMany([1, 2, 3]);
-// const secondThreeList = new SinglyLinkedList().insertAtBackMany([4, 5, 6]);
-// const unorderedList = new SinglyLinkedList().insertAtBackMany([
-//   -5, -10, 4, -3, 6, 1, -7, -2,
-// ]);
-
+const singleNodeList = new SinglyLinkedList().insertAtBackMany([1]);
+const biNodeList = new SinglyLinkedList().insertAtBackMany([1, 2]);
+const firstThreeList = new SinglyLinkedList().insertAtBackMany([1, 2, 3]);
+const secondThreeList = new SinglyLinkedList().insertAtBackMany([4, 5, 6]);
+const unorderedList = new SinglyLinkedList().insertAtBackMany([
+  -5, -10, 4, -3, 6, 1, -7, -2,
+]);
 const recursive = new SinglyLinkedList().insertAtBackRecursive([1, 2, 3, 4]);
 
-console.log("recursive", recursive.toArr());
+// console.log("recursive", recursive.toArr());
 
 /* node 4 connects to node 1, back to head */
 // const perfectLoopList = new SinglyLinkedList().insertAtBackMany([1, 2, 3, 4]);
@@ -164,4 +213,8 @@ console.log("recursive", recursive.toArr());
 // ]);
 
 // Print your list like so:
-// console.log("print", firstThreeList.toArr());
+// console.log("singleNodeList", singleNodeList.toArr());
+// console.log("biNodeList", biNodeList.toArr());
+console.log("firstThreeList", firstThreeList.removeHead());
+// console.log("secondThreeList", secondThreeList.toArr());
+// console.log("unorderedList", unorderedList.toArr());

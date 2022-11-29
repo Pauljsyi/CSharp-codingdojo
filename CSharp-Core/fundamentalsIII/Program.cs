@@ -130,4 +130,79 @@ static int[] NonNegatives(int[] IntArray)
 
 int[] NegArray = new int[] {1, -4, 5, -2, 10, -30, 30};
 
-Console.WriteLine(NonNegatives(NegArray));
+// Console.WriteLine(NonNegatives(NegArray));
+
+
+static void PrintDictionary(Dictionary<string,string> MyDictionary)
+{
+    // Your code here
+    foreach(KeyValuePair<string,string> entry in MyDictionary) 
+    {
+
+    Console.WriteLine($"{entry.Key} - {entry.Value}");
+    }
+    
+
+}
+
+Dictionary<string,string> profile = new Dictionary<string,string>();
+// We add values to our dictionary the same way we add in Lists
+// But remember to specify the key AND value
+profile.Add("Name", "Sandra");
+profile.Add("Language", "C#");
+profile.Add("Location", "England");
+
+PrintDictionary(profile);
+
+static bool FindKey(Dictionary<string,string> MyDictionary, string SearchTerm)
+{
+    // Your code here
+    foreach(KeyValuePair<string, string> entry in MyDictionary) {
+        if (SearchTerm == entry.Key) {
+            return true;
+        }
+    }
+    return false;
+}
+
+// // true
+// Console.WriteLine( FindKey(profile, "Location" ));
+// // false
+// Console.WriteLine( FindKey(profile, "age" ));
+
+// GENERATE A DICTIONARY
+
+// Ex: Given ["Julie", "Harold", "James", "Monica"] and [6,12,7,10], return a dictionary
+// {
+//	"Julie": 6,
+//	"Harold": 12,
+//	"James": 7,
+//	"Monica": 10
+// } 
+
+List<string> namesList = new List<string>() {"Julie", "Harold", "James", "Monica"} ;
+List<int> ageList = new List<int>() {6,12,7,10} ;
+
+static Dictionary<string,int> GenerateDictionary(List<string> Names, List<int> Numbers)
+{
+    Dictionary<string,int> people = new Dictionary<string,int>();
+    // Your code here
+    if (Names.Count != Numbers.Count) {
+        Console.WriteLine($"names count does not match numbers count");
+        
+        return people;
+    }
+    for (int i = 0; i < Names.Count; i++)
+    {
+        people.Add(Names[i], Numbers[i]);
+    }
+
+    foreach(KeyValuePair<string,int> person in people)
+{
+    Console.WriteLine($"{person.Key} - {person.Value}");
+}
+    
+   return people;
+}
+
+Console.WriteLine(GenerateDictionary(namesList, ageList));
