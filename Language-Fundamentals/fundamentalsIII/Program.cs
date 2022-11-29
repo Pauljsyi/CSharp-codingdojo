@@ -32,7 +32,7 @@ bikes.Add("Moto Guzzi");
 bikes.Add("Harley Davidson");
 bikes.Add("Suzuki");
 
-// PrintList(bikes);
+PrintList(bikes);
 
 
 // 2. PRINT SUM
@@ -43,9 +43,9 @@ static void SumOfNumbers(List<int> IntList)
     for (int i = 0; i< IntList.Count; i++) 
     {
         result += IntList[i];
-        // Console.WriteLine(IntList[i]);
+        Console.WriteLine(IntList[i]);
     }
-    // Console.WriteLine(result);
+    Console.WriteLine(result);
 }
 
 List<int> IntegerList = new List<int>();
@@ -74,29 +74,29 @@ static int FindMax(List<int> IntList)
     return max;
 }
 
-// Console.WriteLine(FindMax(IntegerList));
+Console.WriteLine(FindMax(IntegerList));
 
 
 // SQUARE THE VALUES
 
-// static List<int> SquareValues(List<int> IntList)
-// {
-//     List<int> result = new List<int>();
-//     for (int i = 0; i < IntList.Count; i++)
-//     {
-//         result.Add(IntList[i] * IntList[i]);
+static List<int> SquareValues(List<int> IntList)
+{
+    List<int> result = new List<int>();
+    for (int i = 0; i < IntList.Count; i++)
+    {
+        result.Add(IntList[i] * IntList[i]);
         
-//     }
+    }
 
-//     for(int i =0; i < result.Count; i++)
-//     {
-//         Console.WriteLine(result[i]);
-//     }
+    for(int i =0; i < result.Count; i++)
+    {
+        Console.WriteLine(result[i]);
+    }
     
-//     return result;
-// }
+    return result;
+}
 
-// Console.WriteLine(SquareValues(IntegerList).ToArray());
+Console.WriteLine(SquareValues(IntegerList).ToArray());
 
 
 static int[] NonNegatives(int[] IntArray)
@@ -130,7 +130,7 @@ static int[] NonNegatives(int[] IntArray)
 
 int[] NegArray = new int[] {1, -4, 5, -2, 10, -30, 30};
 
-// Console.WriteLine(NonNegatives(NegArray));
+Console.WriteLine(NonNegatives(NegArray));
 
 
 static void PrintDictionary(Dictionary<string,string> MyDictionary)
@@ -165,10 +165,10 @@ static bool FindKey(Dictionary<string,string> MyDictionary, string SearchTerm)
     return false;
 }
 
-// // true
-// Console.WriteLine( FindKey(profile, "Location" ));
-// // false
-// Console.WriteLine( FindKey(profile, "age" ));
+// true
+Console.WriteLine( FindKey(profile, "Location" ));
+// false
+Console.WriteLine( FindKey(profile, "age" ));
 
 // GENERATE A DICTIONARY
 

@@ -1,0 +1,15 @@
+C:\Users\Paul2\coding-dojo\dojo-assignments\c#\CSharp-Practice\Puzzles\bin\Debug\net6.0\puzzles.exe
+C:\Users\Paul2\coding-dojo\dojo-assignments\c#\CSharp-Practice\Puzzles\bin\Debug\net6.0\puzzles.deps.json
+C:\Users\Paul2\coding-dojo\dojo-assignments\c#\CSharp-Practice\Puzzles\bin\Debug\net6.0\puzzles.runtimeconfig.json
+C:\Users\Paul2\coding-dojo\dojo-assignments\c#\CSharp-Practice\Puzzles\bin\Debug\net6.0\puzzles.dll
+C:\Users\Paul2\coding-dojo\dojo-assignments\c#\CSharp-Practice\Puzzles\bin\Debug\net6.0\puzzles.pdb
+C:\Users\Paul2\coding-dojo\dojo-assignments\c#\CSharp-Practice\Puzzles\obj\Debug\net6.0\puzzles.csproj.AssemblyReference.cache
+C:\Users\Paul2\coding-dojo\dojo-assignments\c#\CSharp-Practice\Puzzles\obj\Debug\net6.0\puzzles.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Paul2\coding-dojo\dojo-assignments\c#\CSharp-Practice\Puzzles\obj\Debug\net6.0\puzzles.AssemblyInfoInputs.cache
+C:\Users\Paul2\coding-dojo\dojo-assignments\c#\CSharp-Practice\Puzzles\obj\Debug\net6.0\puzzles.AssemblyInfo.cs
+C:\Users\Paul2\coding-dojo\dojo-assignments\c#\CSharp-Practice\Puzzles\obj\Debug\net6.0\puzzles.csproj.CoreCompileInputs.cache
+C:\Users\Paul2\coding-dojo\dojo-assignments\c#\CSharp-Practice\Puzzles\obj\Debug\net6.0\puzzles.dll
+C:\Users\Paul2\coding-dojo\dojo-assignments\c#\CSharp-Practice\Puzzles\obj\Debug\net6.0\refint\puzzles.dll
+C:\Users\Paul2\coding-dojo\dojo-assignments\c#\CSharp-Practice\Puzzles\obj\Debug\net6.0\puzzles.pdb
+C:\Users\Paul2\coding-dojo\dojo-assignments\c#\CSharp-Practice\Puzzles\obj\Debug\net6.0\puzzles.genruntimeconfig.cache
+C:\Users\Paul2\coding-dojo\dojo-assignments\c#\CSharp-Practice\Puzzles\obj\Debug\net6.0\ref\puzzles.dll
