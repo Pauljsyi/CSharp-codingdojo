@@ -96,7 +96,7 @@ class SinglyLinkedList {
 
     console.log(data);
 
-    // return this.insertAtBackRecursive(data, (runner = runner.next));
+    return this.insertAtBackRecursive(data, runner.next);
   }
 
   /**

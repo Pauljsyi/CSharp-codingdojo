@@ -45,7 +45,7 @@ static void SumOfNumbers(List<int> IntList)
         result += IntList[i];
         // Console.WriteLine(IntList[i]);
     }
-    Console.WriteLine(result);
+    // Console.WriteLine(result);
 }
 
 List<int> IntegerList = new List<int>();
@@ -79,21 +79,55 @@ static int FindMax(List<int> IntList)
 
 // SQUARE THE VALUES
 
-static List<int> SquareValues(List<int> IntList)
-{
-    List<int> result = new List<int>();
-    for (int i = 0; i < IntList.Count; i++)
-    {
-        result.Add(IntList[i] * IntList[i]);
+// static List<int> SquareValues(List<int> IntList)
+// {
+//     List<int> result = new List<int>();
+//     for (int i = 0; i < IntList.Count; i++)
+//     {
+//         result.Add(IntList[i] * IntList[i]);
         
+//     }
+
+//     for(int i =0; i < result.Count; i++)
+//     {
+//         Console.WriteLine(result[i]);
+//     }
+    
+//     return result;
+// }
+
+// Console.WriteLine(SquareValues(IntegerList).ToArray());
+
+
+static int[] NonNegatives(int[] IntArray)
+{
+    // Console.WriteLine($"{IntArray.Length}");
+    
+    // Your code here
+    int[] result = new int[IntArray.Length];
+    for (int i = 0; i < IntArray.Length; i++)
+    {
+        if (IntArray[i] < 0)
+        {
+            result[i] = 0;
+        }
+        else 
+        {
+            result[i] = IntArray[i];
+        }
     }
 
-    for(int i =0; i < result.Count; i++)
+    for (int i = 0; i < result.Length; i++)
     {
         Console.WriteLine(result[i]);
     }
+
+    
     
     return result;
 }
 
-Console.WriteLine(SquareValues(IntegerList).ToArray());
+
+int[] NegArray = new int[] {1, -4, 5, -2, 10, -30, 30};
+
+Console.WriteLine(NonNegatives(NegArray));
