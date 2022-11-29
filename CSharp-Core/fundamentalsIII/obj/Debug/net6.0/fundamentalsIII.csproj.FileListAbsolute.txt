@@ -1,0 +1,15 @@
+C:\Users\Paul2\coding-dojo\dojo-assignments\c#\CSharp-Core\fundamentalsIII\bin\Debug\net6.0\fundamentalsIII.exe
+C:\Users\Paul2\coding-dojo\dojo-assignments\c#\CSharp-Core\fundamentalsIII\bin\Debug\net6.0\fundamentalsIII.deps.json
+C:\Users\Paul2\coding-dojo\dojo-assignments\c#\CSharp-Core\fundamentalsIII\bin\Debug\net6.0\fundamentalsIII.runtimeconfig.json
+C:\Users\Paul2\coding-dojo\dojo-assignments\c#\CSharp-Core\fundamentalsIII\bin\Debug\net6.0\fundamentalsIII.dll
+C:\Users\Paul2\coding-dojo\dojo-assignments\c#\CSharp-Core\fundamentalsIII\bin\Debug\net6.0\fundamentalsIII.pdb
+C:\Users\Paul2\coding-dojo\dojo-assignments\c#\CSharp-Core\fundamentalsIII\obj\Debug\net6.0\fundamentalsIII.csproj.AssemblyReference.cache
+C:\Users\Paul2\coding-dojo\dojo-assignments\c#\CSharp-Core\fundamentalsIII\obj\Debug\net6.0\fundamentalsIII.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Paul2\coding-dojo\dojo-assignments\c#\CSharp-Core\fundamentalsIII\obj\Debug\net6.0\fundamentalsIII.AssemblyInfoInputs.cache
+C:\Users\Paul2\coding-dojo\dojo-assignments\c#\CSharp-Core\fundamentalsIII\obj\Debug\net6.0\fundamentalsIII.AssemblyInfo.cs
+C:\Users\Paul2\coding-dojo\dojo-assignments\c#\CSharp-Core\fundamentalsIII\obj\Debug\net6.0\fundamentalsIII.csproj.CoreCompileInputs.cache
+C:\Users\Paul2\coding-dojo\dojo-assignments\c#\CSharp-Core\fundamentalsIII\obj\Debug\net6.0\fundamentalsIII.dll
+C:\Users\Paul2\coding-dojo\dojo-assignments\c#\CSharp-Core\fundamentalsIII\obj\Debug\net6.0\refint\fundamentalsIII.dll
+C:\Users\Paul2\coding-dojo\dojo-assignments\c#\CSharp-Core\fundamentalsIII\obj\Debug\net6.0\fundamentalsIII.pdb
+C:\Users\Paul2\coding-dojo\dojo-assignments\c#\CSharp-Core\fundamentalsIII\obj\Debug\net6.0\fundamentalsIII.genruntimeconfig.cache
+C:\Users\Paul2\coding-dojo\dojo-assignments\c#\CSharp-Core\fundamentalsIII\obj\Debug\net6.0\ref\fundamentalsIII.dll
