@@ -2,13 +2,13 @@
 // Console.WriteLine("Hello, World!");
 
 // // THREE BASIC ARRAYS
-// int[] arrayInt = new int[] {0,1,2,3,4,5,6,7,8,9};
+int[] arrayInt = new int[] {0,1,2,3,4,5,6,7,8,9};
 
 // Console.WriteLine(arrayInt[5]);
 
-// string[] arrayString = new string[] {"Tim", "Martin", "Nikki", "Sara"};
+string[] names = new string[] {"Tim", "Martin", "Nikki", "Sara"};
 
-// Console.WriteLine(arrayString[0]);
+// Console.WriteLine(names[0]);
 
 
 // bool[] isFalse = new bool[10];
@@ -34,14 +34,29 @@ flavors.Add("Strawberry");
 flavors.Add("Chocolate");
 flavors.Add("Cookies'n Cream");
 flavors.Add("Coffee");
-flavors.RemoveAt(2);
+// flavors.RemoveAt(2);
 
-for(int i = 0; i < flavors.Count; i++) {
-    Console.WriteLine(flavors[i]);
-}
+// for(int i = 0; i < flavors.Count; i++) {
+//     Console.WriteLine(flavors[i]);
+// }
 
-Console.WriteLine(flavors.Count);
+// Console.WriteLine(flavors.Count);
 
 // Console.WriteLine(flavors[2]);
+
+
+// USER DICTIONARY
+
+Dictionary<string, string> user = new Dictionary<string, string>();
+
+// user.Add(names[0], flavors[0]);
+
+for (int i = 0; i < names.Length; i++) {
+    user.Add(names[i], flavors[i]);
+    Console.WriteLine($"{names[i]}: {user[names[i]]}");
+}
+
+
+
 
 
