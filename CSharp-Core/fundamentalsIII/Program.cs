@@ -77,3 +77,23 @@ static int FindMax(List<int> IntList)
 // Console.WriteLine(FindMax(IntegerList));
 
 
+// SQUARE THE VALUES
+
+static List<int> SquareValues(List<int> IntList)
+{
+    List<int> result = new List<int>();
+    for (int i = 0; i < IntList.Count; i++)
+    {
+        result.Add(IntList[i] * IntList[i]);
+        
+    }
+
+    for(int i =0; i < result.Count; i++)
+    {
+        Console.WriteLine(result[i]);
+    }
+    
+    return result;
+}
+
+Console.WriteLine(SquareValues(IntegerList).ToArray());
