@@ -6,8 +6,14 @@ Attack tackle = new Attack("tackle", 25);
 // RANGED ATTACKS
 Attack shootArrow = new Attack("shoot arrow", 20);
 Attack throwKnife = new Attack("throw knife", 15);
+// MAGIC CASTER ATTACKS
+Attack fireball = new Attack("fireball", 25);
+Attack shield = new Attack("shield", 0);
+Attack staffStrike = new Attack("staff strike", 15);
 List<Attack> MeleeAttackList = new List<Attack>() {kick, punch, tackle};
 List<Attack> RangeAttackList = new List<Attack>() {shootArrow, throwKnife};
+List<Attack> MagicAttackList = new List<Attack>() {fireball, shield, staffStrike};
+
 Enemy p1 = new Enemy("Paul");
 Enemy p2 = new Enemy("George");
 
@@ -34,19 +40,22 @@ Enemy p2 = new Enemy("George");
 // p1.RandomAttack();
 // p2.RandomAttack();
 
-Melee Assassin = new Melee("general assassin", MeleeAttackList);
-// Assassin.Rage();
-// Assassin.ShowInfo();
-Range Archer = new Range("hunter", RangeAttackList);
-Archer.Attack();
-Console.WriteLine($"{Archer._Distance}");
-Archer.Dash();
-Console.WriteLine($"{Archer._Distance}");
+Melee assassin = new Melee("assassin", MeleeAttackList);
+assassin.Rage();
+assassin.ShowInfo();
+Range hunter = new Range("hunter", RangeAttackList);
+hunter.Attack();
+Console.WriteLine($"{hunter._Distance}");
+hunter.Dash();
+Console.WriteLine($"{hunter._Distance}");
+MagicCaster mage = new MagicCaster("mage", MagicAttackList);
+mage.Attack();
+mage.Heal(hunter);
+mage.Heal(mage);
 
 
-// Console.WriteLine($"{Archer._DistanceField}");
 
 
-// Console.WriteLine($"{Assassin._name} {Assassin._health}");
+
 
 
