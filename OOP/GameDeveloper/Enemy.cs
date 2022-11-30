@@ -3,7 +3,7 @@ class Enemy
     private string name;
     public string _name {get {return name;} set {name = value;}}
     private int health;
-    public int _health {get{return health;}}
+    public int _health {get{return health;} set{health = value;}}
     public List<Attack> attacks = new List<Attack>();
 
     public Enemy(string n)
