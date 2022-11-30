@@ -40,6 +40,72 @@ class SinglyLinkedList {
     /** @type {ListNode|null} */
     this.head = null;
   }
+  // 11/30
+  /**
+   * Removes the last node of this list.
+   * - Time: O(?).
+   * - Space: O(?).
+   * @returns {any} The data from the node that was removed.
+   */
+  removeBack() {
+    if (this.isEmpty()) {
+      return null;
+    }
+
+    // let runner = this.head;
+
+    // while (runner.next.next !== null) {
+    //   runner.
+    // }
+  }
+
+  /**
+   * Determines whether or not the given search value exists in this list.
+   * - Time: O(?).
+   * - Space: O(?).
+   * @param {any} val The data to search for in the nodes of this list.
+   * @returns {boolean}
+   */
+  contains(val) {
+    if (this.isEmpty()) {
+      return null;
+    }
+
+    console.log(val);
+
+    let runner = this.head;
+
+    while (runner !== null) {
+      console.log("runner: " + runner.data);
+      if (runner.data === val) return true;
+      runner = runner.next;
+    }
+    return false;
+  }
+
+  /**
+   * Determines whether or not the given search value exists in this list.
+   * - Time: O(?).
+   * - Space: O(?).
+   * @param {any} val The data to search for in the nodes of this list.
+   * @param {?ListNode} current The current node during the traversal of this list
+   *    or null when the end of the list has been reached.
+   * @returns {boolean}
+   */
+  containsRecursive(val, current = this.head) {}
+
+  // EXTRA
+  /**
+   * Recursively finds the maximum integer data of the nodes in this list.
+   * - Time: O(?).
+   * - Space: O(?).
+   * @param {ListNode} runner The start or current node during traversal, or null
+   *    when the end of the list is reached.
+   * @param {ListNode} maxNode Keeps track of the node that contains the current
+   *    max integer as it's data.
+   * @returns {?number} The max int or null if none.
+   */
+  recursiveMax(runner = this.head, maxNode = this.head) {}
 
   // 11/29
 
@@ -215,6 +281,8 @@ const recursive = new SinglyLinkedList().insertAtBackRecursive([1, 2, 3, 4]);
 // Print your list like so:
 // console.log("singleNodeList", singleNodeList.toArr());
 // console.log("biNodeList", biNodeList.toArr());
-console.log("firstThreeList", firstThreeList.removeHead());
+// console.log("firstThreeList", firstThreeList.removeHead());
 // console.log("secondThreeList", secondThreeList.toArr());
 // console.log("unorderedList", unorderedList.toArr());
+console.log("contains", firstThreeList.contains(2));
+console.log("contains", firstThreeList.contains(3));
