@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    
+    @model Dictionary<string, string>
+    <h1> @Model["messageTitle"]</h1>
+    @* Take note we use a capital "M" Model here, but a lowercase "m" model above *@
+    <p>@Model["message"]</p>
+
+
+</div>

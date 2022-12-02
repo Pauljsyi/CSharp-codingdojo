@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    @model List<User>
+    <h2>Here is a List of Users<h2>
+    @* Try using just @Model first to see what happens *@
+    @foreach(User user in Model){
+            <p>@user.FirstName @user.LastName</p>
+        }
+    
+</body>
+</html>
