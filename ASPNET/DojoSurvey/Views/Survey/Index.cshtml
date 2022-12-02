@@ -9,31 +9,36 @@
 </head>
 <body>
     <div class="container">
-        <form action="/result" method="post">
+        @model DojoSurvey.Models.Survey
+        <form asp-action="FormSubmission" asp-controller="Survey" method="post">
+            
             <div class="form-group">
-                <label for="name">Your Name:</label>
-                <input class="form-control" type="text" name="name">
+                <label asp-for="name">Your Name:</label>
+                <input class="form-control" asp-for="name">
             </div>
+            <span asp-validation-for="name"></span>
             <div class="form-group">
-                <label for="location">Dojo Location:</label>
-                <select class="form-select" name="location" id="location">
+                <label asp-for="location">Dojo Location:</label>
+                <select class="form-select" asp-for="location">
                     <option value="san jose">San Jose</option>
                     <option value="burbank">Burbank</option>
                     <option value="bellevue">Bellevue</option>
                 </select>
             </div>
+            <span asp-validation-for="location"></span>
             <div class="form-group">
-                <label for="language">Favorite Language:</label>
-                <select class="form-select" name="language" id="language">
+                <label asp-for="language">Favorite Language:</label>
+                <select class="form-select" asp-for="language">
                     <option value="javascript">JavaScript</option>
                     <option value="c#">C#</option>
                     <option value="python">Python</option>
                     <option value="java">Java</option>
                 </select>
             </div>
+            <span asp-validation-for="language"></span>
             <div class="form-group">
-                <label for="comments">Comments (optional):</label>
-                <textarea class="form-control" type="text" name="comments" cols="5" rows="5"></textarea>
+                <label asp-for="comments">Comments (optional):</label>
+                <textarea class="form-control" asp-for="comments" cols="5" rows="5"></textarea>
             </div>
             <button class="btn btn-danger">Submit</button>
         </form>

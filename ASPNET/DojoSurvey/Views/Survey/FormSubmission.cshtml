@@ -12,24 +12,24 @@
         <h1>Submitted Info</h1>
         <table class="table">
             <tbody>
-                @{
+                @model DojoSurvey.Models.Survey
                     <tr>
                         <th>Name:</th>
-                        <td style="text-transform: capitalize">@ViewBag.name</td>
+                        <td style="text-transform: capitalize">@Model.name</td>
                     </tr>
                     <tr>
                         <th>Dojo Location:</th>
-                        <td style="text-transform: capitalize">@ViewBag.location</td>
+                        <td style="text-transform: capitalize">@Model.location</td>
                     </tr>
                     <tr>
                         <th>Favorite Language:</th>
-                        <td style="text-transform: capitalize">@ViewBag.language</td>
+                        <td style="text-transform: capitalize">@Model.language</td>
                     </tr>
                     <tr>
                         <th>Comments:</th>
-                        <td>@ViewBag.comments</td>
+                        <td>@Model.comments</td>
                     </tr>
-                }
+                
             </tbody>
         </table>
         <a href="/"><button class="btn btn-danger" >Go Back</button></a>

@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 namespace DojoSurvey.Controllers;
+using DojoSurvey.Models;
 public class SurveyController : Controller
 {
     [HttpGet]
@@ -23,20 +24,46 @@ public class SurveyController : Controller
 
         // ICollection<string> surveyCollection = surveydata;
         string nocomment = "No Comment";
-        
-        @ViewBag.name = name;
-        @ViewBag.location = location;
-        @ViewBag.language = language;
-        if (comments == null) {
-            @ViewBag.comments = nocomment;
-        } else {
-        @ViewBag.comments = comments;
+        // ViewBag to send data to front
+        // @ViewBag.name = name;
+        // @ViewBag.location = location;
+        // @ViewBag.language = language;
+        // if (comments == null) {
+        //     @ViewBag.comments = nocomment;
+        // } else {
+        // @ViewBag.comments = comments;
+        // }
+        Survey inputData = new Survey(){
+            name = name,
+            location = location,
+            language = language,
+            comments = comments
+        };
+
+        // model validations...
+        if (ModelState.IsValid)
+        {
+            Console.WriteLine($"this is running");
+
+            return View(inputData);
+            // return RedirectToAction("Index");
+        } 
+        else
+        {
+            Console.WriteLine($"error is running");
+            
+            
+            return View("Index");
         }
+
+        // Instantiate a new class using Survey Model
+        
+
 
         // Console.WriteLine($"{comments.Length}");
         
         
-        return View();
+        // return View(inputData);
     }
 
 
