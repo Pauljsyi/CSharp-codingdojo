@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+
 namespace DojoSurvey.Controllers;
 using DojoSurvey.Models;
 public class SurveyController : Controller
@@ -15,13 +16,12 @@ public class SurveyController : Controller
     }
     [HttpPost]
     [Route("result")]
-    public IActionResult FormSubmission(string name, string location, string language, string comments)
+    public IActionResult FormSubmission(Survey survey)
     {
-        Console.WriteLine($"Name: {name} \nLocation: {location} \nLanguage: {language} \nComments: {comments}  ");
+        // Console.WriteLine($"Name: {name} \nLocation: {location} \nLanguage: {language} \nComments: {comments}  ");
 
         // how to add input data into a list to iterate through
         // List<string> surveydata = new List<string>() {name, location, language, comments};
-
         // ICollection<string> surveyCollection = surveydata;
         string nocomment = "No Comment";
         // ViewBag to send data to front
@@ -33,26 +33,27 @@ public class SurveyController : Controller
         // } else {
         // @ViewBag.comments = comments;
         // }
-        Survey inputData = new Survey(){
-            name = name,
-            location = location,
-            language = language,
-            comments = comments
-        };
+        // System.Console.WriteLine($"{survey.name}");
+        
 
         // model validations...
         if (ModelState.IsValid)
         {
-            Console.WriteLine($"this is running");
 
-            return View(inputData);
+        //     Survey inputData = new Survey(){
+        //     name = name,
+        //     location = location,
+        //     language = language,
+        //     comments = comments
+        // };
+            Console.WriteLine($"this is running");
+            // return View(inputData);
+            return View(survey);
             // return RedirectToAction("Index");
         } 
         else
         {
             Console.WriteLine($"error is running");
-            
-            
             return View("Index");
         }
 

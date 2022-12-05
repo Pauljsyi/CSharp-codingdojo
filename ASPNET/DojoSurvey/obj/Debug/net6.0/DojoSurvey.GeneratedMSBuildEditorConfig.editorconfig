@@ -8,21 +8,21 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DojoSurvey
 build_property.RootNamespace = DojoSurvey
-build_property.ProjectDir = C:\Users\Paul2\coding-dojo\dojo-assignments\c#\ASPNET\DojoSurvey\
+build_property.ProjectDir = c:\Users\Paul2\coding-dojo\dojo-assignments\c#\ASPNET\DojoSurvey\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Paul2\coding-dojo\dojo-assignments\c#\ASPNET\DojoSurvey
+build_property.MSBuildProjectDirectory = c:\Users\Paul2\coding-dojo\dojo-assignments\c#\ASPNET\DojoSurvey
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Paul2/coding-dojo/dojo-assignments/c\#/ASPNET/DojoSurvey/Views/Survey/FormSubmission.cshtml]
+[c:/Users/Paul2/coding-dojo/dojo-assignments/c\#/ASPNET/DojoSurvey/Views/Survey/FormSubmission.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VydmV5XEZvcm1TdWJtaXNzaW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paul2/coding-dojo/dojo-assignments/c\#/ASPNET/DojoSurvey/Views/Survey/Index.cshtml]
+[c:/Users/Paul2/coding-dojo/dojo-assignments/c\#/ASPNET/DojoSurvey/Views/Survey/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VydmV5XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paul2/coding-dojo/dojo-assignments/c\#/ASPNET/DojoSurvey/Views/_ViewImports.cshtml]
+[c:/Users/Paul2/coding-dojo/dojo-assignments/c\#/ASPNET/DojoSurvey/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

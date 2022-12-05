@@ -18,6 +18,11 @@
             </div>
             <span asp-validation-for="name"></span>
             <div class="form-group">
+                <label asp-for="birthday">enter birthday:</label>
+                <input class="form-control" asp-for="birthday">
+            </div>
+            <span asp-validation-for="birthday"></span>
+            <div class="form-group"> 
                 <label asp-for="location">Dojo Location:</label>
                 <select class="form-select" asp-for="location">
                     <option value="san jose">San Jose</option>
@@ -39,7 +44,9 @@
             <div class="form-group">
                 <label asp-for="comments">Comments (optional):</label>
                 <textarea class="form-control" asp-for="comments" cols="5" rows="5"></textarea>
+                <span asp-validation-for="comments"></span>
             </div>
+            
             <button class="btn btn-danger">Submit</button>
         </form>
     </div>

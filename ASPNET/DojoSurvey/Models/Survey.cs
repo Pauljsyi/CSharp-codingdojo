@@ -2,12 +2,16 @@
 namespace DojoSurvey.Models;
 using System.ComponentModel.DataAnnotations;
 
-public class Survey
+public class Survey 
 {
     [Required(ErrorMessage = "Name is required!")]
-    [MinLength(3, ErrorMessage="Name must be at least 3 characters in length")]
+    [MinLength(3)]
     public string name {get;set;}
+
+    public DateTime birthday {get;set;}
+    
     public string location {get;set;}
     public string language {get;set;}
-    public string comments{get;set;}
+    [MinLength(5, ErrorMessage = "Must contain 5 or more characters")]
+    public string? comments{get;set;}
 }
