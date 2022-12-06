@@ -13,9 +13,10 @@ public class HomeController : Controller
         _logger = logger;
     }
 
+    
     public IActionResult Index()
     {
-        HttpContext.Session.SetString("Username", "Paul Yi");
+        
         return View();
     }
 
@@ -31,11 +32,21 @@ public class HomeController : Controller
     //     return View();
     // }
 
-
-    public IActionResult Privacy()
+    [HttpPost]
+    [Route("dashboard")]
+    public IActionResult Privacy(string name)
     {
-        string? LocalVariable = HttpContext.Session.GetString("Username");
-        Console.WriteLine(LocalVariable);
+        System.Console.WriteLine($"this is running, {name}");
+        HttpContext.Session.SetString("Username", name);
+        
+        return View();
+    }
+
+    [HttpPost]
+    [Route("")]
+    public IActionResult Logout()
+    {
+        HttpContext.Session.Clear();
         return View();
     }
 
