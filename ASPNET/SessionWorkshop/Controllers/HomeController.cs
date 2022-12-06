@@ -36,12 +36,27 @@ public class HomeController : Controller
 
     [HttpPost]
     [Route("dashboard")]
-    public IActionResult Privacy(string name)
+    public IActionResult Dashboard(string name)
     {
         System.Console.WriteLine($"this is running, {name}");
         HttpContext.Session.SetString("Username", name);
+        HttpContext.Session.SetInt32("num", 22);
+        
         
         return View();
+    }
+
+    [HttpPost]
+    
+    public IActionResult AddByOne(int number = 1)
+    {
+        int? currentNum = HttpContext.Session.GetInt32("num");
+System.Console.WriteLine($"this is current num before adding 1, {currentNum} ");
+        currentNum += number;
+        HttpContext.Session.SetInt32("num", currentNum.Value);
+        System.Console.WriteLine($"add by one is running, {currentNum} ");
+        // HttpContext.Session.SetInt32("num", currentNum);
+        return View("dashboard");
     }
 
     [HttpPost]

@@ -1,12 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p>this is dashboard</p>
-</body>
-</html>
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to detail your site's privacy policy.</p>
+<form asp-action="AddByOne" asp-controller="Home" method="post">
+
+@* <input asp-for="add"/> *@
+<button>add 1</button>
+</form>
+
+<h1>@Context.Session.GetString("Username")</h1>
+<h1>@Context.Session.GetInt32("num")</h1>
