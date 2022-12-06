@@ -5,11 +5,22 @@
 <h1>@ViewData["Title"]</h1>
 
 <p>Use this page to detail your site's privacy policy.</p>
+@* <a class="btn btn-warning" href='@Url.Action("AddByOne", "Home", 
+    new { num = "1" })'>+ 1</a> *@
+@* <button class="btn btn-warning" type="button" onclick="location.href='@Url.Action("AddByOne", "Home")'">+1</button> *@
 <form asp-action="AddByOne" asp-controller="Home" method="post">
-
-@* <input asp-for="add"/> *@
-<button>add 1</button>
+<button class="btn btn-warning">+1</button>
 </form>
+<form asp-action="SubtractByOne" asp-controller="Home" method="post">
+<button class="btn btn-primary">- 1</button>
+</form>
+<form asp-action="MultiplyByTwo" asp-controller="Home" method="post">
+<button class="btn btn-danger">x 2</button>
+</form>
+<form asp-action="AddRandom" asp-controller="Home" method="post">
+<button class="btn btn-success">+ ?</button>
+</form>
+
 
 <h1>@Context.Session.GetString("Username")</h1>
 <h1>@Context.Session.GetInt32("num")</h1>

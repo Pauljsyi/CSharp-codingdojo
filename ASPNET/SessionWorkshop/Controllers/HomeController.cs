@@ -51,10 +51,53 @@ public class HomeController : Controller
     public IActionResult AddByOne(int number = 1)
     {
         int? currentNum = HttpContext.Session.GetInt32("num");
-System.Console.WriteLine($"this is current num before adding 1, {currentNum} ");
+        System.Console.WriteLine($"this is current num before adding 1, {currentNum} ");
         currentNum += number;
         HttpContext.Session.SetInt32("num", currentNum.Value);
         System.Console.WriteLine($"add by one is running, {currentNum} ");
+        // HttpContext.Session.SetInt32("num", currentNum);
+        return View("dashboard");
+    }
+
+    [HttpPost]
+    
+    public IActionResult SubtractByOne(int number = 1)
+    {
+        int? currentNum = HttpContext.Session.GetInt32("num");
+        System.Console.WriteLine($"this is current num before subtracting 1, {currentNum} ");
+        currentNum -= number;
+        HttpContext.Session.SetInt32("num", currentNum.Value);
+        System.Console.WriteLine($"add by one is running, {currentNum} ");
+        // HttpContext.Session.SetInt32("num", currentNum);
+        return View("dashboard");
+    }
+    [HttpPost]
+    
+    public IActionResult MultiplyByTwo(int number = 2)
+    {
+        int? currentNum = HttpContext.Session.GetInt32("num");
+        System.Console.WriteLine($"this is current num before subtracting 1, {currentNum} ");
+        currentNum *= number;
+        HttpContext.Session.SetInt32("num", currentNum.Value);
+        System.Console.WriteLine($"add by one is running, {currentNum} ");
+        // HttpContext.Session.SetInt32("num", currentNum);
+        return View("dashboard");
+    }
+
+    [HttpPost]
+    
+    public IActionResult AddRandom()
+    {
+        Random rnd = new Random();
+
+        int randomNum = rnd.Next(1, 100);
+        
+        int? currentNum = HttpContext.Session.GetInt32("num");
+        
+        currentNum += randomNum;
+        System.Console.WriteLine($" adding by random number -> {randomNum}, equaling -> {currentNum} ");
+        HttpContext.Session.SetInt32("num", currentNum.Value);
+        // System.Console.WriteLine($"add by one is running, {currentNum} ");
         // HttpContext.Session.SetInt32("num", currentNum);
         return View("dashboard");
     }
