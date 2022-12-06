@@ -16,7 +16,9 @@ public class HomeController : Controller
     
     public IActionResult Index()
     {
-        
+        string name = HttpContext.Session.GetString("Username");
+        System.Console.WriteLine($"index is running, {name}");
+        HttpContext.Session.Clear();
         return View();
     }
 
