@@ -1,0 +1,25 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+
+    <h1 class="display-4">@ViewBag.OneDish.DishName</h1>
+    <div class="container">
+        <a href="/" class="btn btn-primary">Home</a>
+        <a href="/dishes/new" class="btn btn-primary">Add a Dish</a>
+    </div>
+    <div class="container">
+        <h5>@ViewBag.OneDish.DishName by 
+            <em>
+                @ViewBag.OneDish.ChefName
+            </em>
+        </h5>
+        <p>@ViewBag.OneDish.Description</p>
+        <p>Calories: @ViewBag.OneDish.NumOfCalories</p>
+        <p>Tastiness: @ViewBag.OneDish.Rating</p>
+        
+        @* loop through db and render first 5 dishes *@
+
+    </div>
+</div>
