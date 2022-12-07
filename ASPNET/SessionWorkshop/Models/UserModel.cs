@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 public class User 
 {
-    [Required(ErrorMessage = "Name is required!")]
+    [Required]
     [MinLength(3)]
     public string name {get;set;}
 }

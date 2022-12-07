@@ -1,0 +1,15 @@
+C:\Users\Paul2\coding-dojo\dojo-assignments\c#\ORM\LINQ\LINQ-Eruption\bin\Debug\net6.0\LINQ-Eruption.exe
+C:\Users\Paul2\coding-dojo\dojo-assignments\c#\ORM\LINQ\LINQ-Eruption\bin\Debug\net6.0\LINQ-Eruption.deps.json
+C:\Users\Paul2\coding-dojo\dojo-assignments\c#\ORM\LINQ\LINQ-Eruption\bin\Debug\net6.0\LINQ-Eruption.runtimeconfig.json
+C:\Users\Paul2\coding-dojo\dojo-assignments\c#\ORM\LINQ\LINQ-Eruption\bin\Debug\net6.0\LINQ-Eruption.dll
+C:\Users\Paul2\coding-dojo\dojo-assignments\c#\ORM\LINQ\LINQ-Eruption\bin\Debug\net6.0\LINQ-Eruption.pdb
+C:\Users\Paul2\coding-dojo\dojo-assignments\c#\ORM\LINQ\LINQ-Eruption\obj\Debug\net6.0\LINQ-Eruption.csproj.AssemblyReference.cache
+C:\Users\Paul2\coding-dojo\dojo-assignments\c#\ORM\LINQ\LINQ-Eruption\obj\Debug\net6.0\LINQ-Eruption.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Paul2\coding-dojo\dojo-assignments\c#\ORM\LINQ\LINQ-Eruption\obj\Debug\net6.0\LINQ-Eruption.AssemblyInfoInputs.cache
+C:\Users\Paul2\coding-dojo\dojo-assignments\c#\ORM\LINQ\LINQ-Eruption\obj\Debug\net6.0\LINQ-Eruption.AssemblyInfo.cs
+C:\Users\Paul2\coding-dojo\dojo-assignments\c#\ORM\LINQ\LINQ-Eruption\obj\Debug\net6.0\LINQ-Eruption.csproj.CoreCompileInputs.cache
+C:\Users\Paul2\coding-dojo\dojo-assignments\c#\ORM\LINQ\LINQ-Eruption\obj\Debug\net6.0\LINQ-Eruption.dll
+C:\Users\Paul2\coding-dojo\dojo-assignments\c#\ORM\LINQ\LINQ-Eruption\obj\Debug\net6.0\refint\LINQ-Eruption.dll
+C:\Users\Paul2\coding-dojo\dojo-assignments\c#\ORM\LINQ\LINQ-Eruption\obj\Debug\net6.0\LINQ-Eruption.pdb
+C:\Users\Paul2\coding-dojo\dojo-assignments\c#\ORM\LINQ\LINQ-Eruption\obj\Debug\net6.0\LINQ-Eruption.genruntimeconfig.cache
+C:\Users\Paul2\coding-dojo\dojo-assignments\c#\ORM\LINQ\LINQ-Eruption\obj\Debug\net6.0\ref\LINQ-Eruption.dll

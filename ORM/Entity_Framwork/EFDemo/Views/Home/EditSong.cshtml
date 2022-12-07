@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Edit Song</h1>
+    @model EFDemo.Models.Song
+    <form asp-action="UpdateSong" asp-controller="Home" method="post" asp-route-songId="@Model.MusicId">
+        <div class="mb-3">
+            <label asp-for="Title"></label>
+            <input class="form-control" asp-for="Title">
+            <span class="text-danger" asp-validation-for="Title"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Year"></label>
+            <input class="form-control" asp-for="Year">
+            <span class="text-danger" asp-validation-for="Year"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Genre"></label>
+            <input class="form-control" asp-for="Genre">
+            <span class="text-danger" asp-validation-for="Genre"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Artist"></label>
+            <input class="form-control" asp-for="Artist">
+            <span class="text-danger" asp-validation-for="Artist"></span>
+        </div>
+        <input class="btn btn-success" type="submit" value="Edit Song">
+    </form>
+</div>
