@@ -6,23 +6,26 @@
     @model CRUDelicious.Models.Dish
     <div class="row h-100 justify-content-center align-items-center">
         <div class="col-10 col-md-8 col-lg-6">
-            <h1 class="text-center">Add a Dish!</h1>
+            <h1 class="text-center text-capitalize">@Model.DishName</h1>
             <div class="container text-center">
                 <a href="/" class="btn btn-primary">Home</a>
                 <a href="/dishes/new" class="btn btn-primary">Add a Dish</a>
             </div>
-            <form action="">
+            <form asp-action="UpdateDish" asp-controller="Home" asp-route-dishId="@Model.DishId" method="post">
                 <div class="mb-3">
                     <label asp-for="ChefName">Chef's Name</label>
                     <input class="form-control" asp-for="ChefName">
+                    <span class="text-danger" asp-validation-for="ChefName"></span>
                 </div>
                 <div class="mb-3">
                     <label asp-for="DishName">Name of Dish</label>
                     <input class="form-control" asp-for="DishName">
+                    <span class="text-danger" asp-validation-for="DishName"></span>
                 </div>
                 <div class="mb-3">
                     <label asp-for="NumOfCalories"># of Calories</label>
                     <input class="form-control" asp-for="NumOfCalories">
+                    <span class="text-danger" asp-validation-for="NumOfCalories"></span>
                 </div>
                 <div class="mb-3">
                     <label asp-for="Rating">Tastiness</label>
@@ -33,10 +36,12 @@
                         <option value="4">4</option>
                         <option value="5">5</option>
                     </select>
+                    <span class="text-danger" asp-validation-for="Rating"></span>
                 </div>
                 <div class="mb-3">
                     <label asp-for="Description">Description</label>
                     <textarea class="form-control" asp-for="Description" cols="5" rows="5"></textarea>
+                    <span class="text-danger" asp-validation-for="Description"></span>
                 </div>
                 <button class="btn btn-warning">Update Dish</button>
             </form>

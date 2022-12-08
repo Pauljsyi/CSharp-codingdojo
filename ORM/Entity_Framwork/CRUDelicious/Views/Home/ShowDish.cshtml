@@ -18,7 +18,15 @@
         <p>@ViewBag.OneDish.Description</p>
         <p>Calories: @ViewBag.OneDish.NumOfCalories</p>
         <p>Tastiness: @ViewBag.OneDish.Rating</p>
+        <p>DishID: @ViewBag.OneDish.DishId</p>
         
+        <div class="container">
+            <a href="/dishes/@ViewBag.OneDish.DishId/edit" class="btn btn-primary">Edit</a>
+            
+            <form asp-action="DestroyDish" asp-controller="Home" asp-route-dishId="@ViewBag.OneDish.DishId">
+                <button class="btn btn-danger">Delete</button>
+            </form>
+        </div>
         @* loop through db and render first 5 dishes *@
 
     </div>

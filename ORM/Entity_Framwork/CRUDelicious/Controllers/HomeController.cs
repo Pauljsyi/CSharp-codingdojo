@@ -57,8 +57,49 @@ public class HomeController : Controller
     }
 
     // EDIT DISH FORM VIEW
+    [HttpGet("dishes/{dishId}/edit")]
+    public IActionResult EditDish(int dishId)
+    {
+        Dish? DishToEdit = _context.Dishes.FirstOrDefault(item => item.DishId == dishId);
+        return View("EditDishForm", DishToEdit);
+    }
     // UPDATE DISH ACTION
+    [HttpPost("dishes/{dishId}/update")]
+    public IActionResult UpdateDish(int dishId, Dish UpdatedDish)
+    {
+        Dish? DishToUpdate = _context.Dishes.FirstOrDefault(a => a.DishId == dishId);
+        if (DishToUpdate == null)
+        {
+            return RedirectToAction("Index");
+        }
+
+        if (ModelState.IsValid)
+        {
+            DishToUpdate.ChefName = UpdatedDish.ChefName;
+            DishToUpdate.DishName = UpdatedDish.DishName;
+            DishToUpdate.NumOfCalories = UpdatedDish.NumOfCalories;
+            DishToUpdate.Rating = UpdatedDish.Rating;
+            DishToUpdate.Description = UpdatedDish.Description;
+            DishToUpdate.UpdatedAt = DateTime.Now;
+            _context.SaveChanges();
+            return RedirectToAction("ShowOneDish", DishToUpdate);
+        } else {
+        return View("EditDishForm", DishToUpdate);
+        }
+    }
     // DELETE DISH ACTION
+    [HttpPost("dishes/{dishId}/destroy")]
+    public IActionResult DestroyDish(int dishId)
+    {
+        Dish? DishToDestroy = _context.Dishes.SingleOrDefault(a => a.DishId == dishId);
+        if (DishToDestroy == null)
+        {
+            return RedirectToAction("Index");
+        }
+        _context.Dishes.Remove(DishToDestroy);
+        _context.SaveChanges();
+        return RedirectToAction("Index");
+    }
 
     public IActionResult Privacy()
     {
