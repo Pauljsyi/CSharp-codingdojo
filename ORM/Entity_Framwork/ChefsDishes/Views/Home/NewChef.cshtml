@@ -1,0 +1,28 @@
+        @model ChefsDishes.Models.Chef
+    <div class="row h-100 justify-content-center align-items-center">
+        <div class="col-10 col-md-8 col-lg-6">
+            <h1 class="text-center">Add a Dish!</h1>
+            <div class="container text-center">
+                <a href="/" class="btn btn-primary">Home</a>
+                <a href="/dishes/new" class="btn btn-primary">Add a Dish</a>
+            </div>
+            <form asp-action="CreateChef" asp-controller="Home">
+                <div class="mb-3">
+                    <label asp-for="FirstName">First Name:</label>
+                    <input class="form-control" asp-for="FirstName">
+                    <span class="text-danger" asp-validation-for="FirstName"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="LastName">Last Name:</label>
+                    <input class="form-control" asp-for="LastName">
+                    <span class="text-danger" asp-validation-for="LastName"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Birthdate">Birthdate:</label>
+                    <input type="date" class="form-control" asp-for="Birthdate" asp-format="{0:dd/MM/yyyy}"  >
+                    <span class="text-danger" asp-validation-for="Birthdate"></span>
+                </div>
+                <button class="btn btn-success">Submit</button>
+            </form>
+        </div>
+    </div>

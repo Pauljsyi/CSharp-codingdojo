@@ -16303,6 +16303,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Paul2\\coding-dojo\\dojo-assignments\\c#\\ORM\\Entity_Framwork\\ChefsDishes\\Views\\Home\\NewChef.cshtml",
+      "TargetPath": "Views\\Home\\NewChef.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Paul2\\coding-dojo\\dojo-assignments\\c#\\ORM\\Entity_Framwork\\ChefsDishes\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
@@ -16318,6 +16323,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Paul2\\coding-dojo\\dojo-assignments\\c#\\ORM\\Entity_Framwork\\ChefsDishes\\Views\\Home\\_ChefDropDown.cshtml",
+      "TargetPath": "Views\\Home\\_ChefDropDown.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Paul2\\coding-dojo\\dojo-assignments\\c#\\ORM\\Entity_Framwork\\ChefsDishes\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
@@ -16325,6 +16335,11 @@
     {
       "FilePath": "c:\\Users\\Paul2\\coding-dojo\\dojo-assignments\\c#\\ORM\\Entity_Framwork\\ChefsDishes\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Paul2\\coding-dojo\\dojo-assignments\\c#\\ORM\\Entity_Framwork\\ChefsDishes\\Views\\Home\\NewDishForm.cshtml",
+      "TargetPath": "Views\\Home\\NewDishForm.cshtml",
       "FileKind": "mvc"
     },
     {

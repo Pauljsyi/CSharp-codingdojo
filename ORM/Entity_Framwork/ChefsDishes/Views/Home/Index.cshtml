@@ -2,7 +2,32 @@
     ViewData["Title"] = "Home Page";
 }
 
+@model List<Chef>
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1>Check out our roster of chefs!</h1>
+    <table class="table" bordered >
+        <thead>
+            <tr>
+            <th>Chef's Name</th>
+            <th>Age</th>
+            <th># of Dishes</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            @foreach(Chef c in Model)
+            {
+                <tr>
+                    <td>@c.FirstName @c.LastName</td>
+                    @{
+                        var age = DateTime.Today.Year - @c.Birthdate.Year;
+                        <td>@age</td>
+                    }
+                    
+                    <td>@c.CreatedDishes.Count</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
 </div>

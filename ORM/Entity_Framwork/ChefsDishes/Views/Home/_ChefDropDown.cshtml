@@ -1,0 +1,14 @@
+    @model MyViewModel
+    @* <div class="mb-3">
+        <label asp-for="ChefId">Chef Name</label>
+        <select class="form-control" asp-for="ChefId">*@
+            <option>Please Rate Tastiness</option> 
+            @foreach(Chef c in Model.AllChefs)
+            {
+                <option>@c.FirstName</option>
+            }
+            
+
+        @* </select>
+        <span class="text-danger" asp-validation-for="Tastiness"></span>
+    </div> *@
