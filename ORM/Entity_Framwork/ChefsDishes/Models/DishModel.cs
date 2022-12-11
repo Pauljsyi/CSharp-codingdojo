@@ -13,7 +13,8 @@ public class Dish
     [Required]
     public int Tastiness {get;set;}
     // foreign key
-    public int ChefId {get;set;}
+    [Required]
+    public int? ChefId {get;set;}
     public DateTime CreatedAt {get;set;} = DateTime.Now;
     public DateTime UpdatedAt {get;set;} = DateTime.Now;
 

@@ -1,11 +1,8 @@
         @model ChefsDishes.Models.Chef
     <div class="row h-100 justify-content-center align-items-center">
         <div class="col-10 col-md-8 col-lg-6">
-            <h1 class="text-center">Add a Dish!</h1>
-            <div class="container text-center">
-                <a href="/" class="btn btn-primary">Home</a>
-                <a href="/dishes/new" class="btn btn-primary">Add a Dish</a>
-            </div>
+            <h1 class="text-center">Add a chef!</h1>
+
             <form asp-action="CreateChef" asp-controller="Home">
                 <div class="mb-3">
                     <label asp-for="FirstName">First Name:</label>

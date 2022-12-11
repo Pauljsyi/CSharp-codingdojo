@@ -16298,6 +16298,11 @@
   "RootNamespace": "ChefsDishes",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\Paul2\\coding-dojo\\dojo-assignments\\c#\\ORM\\Entity_Framwork\\ChefsDishes\\Views\\Home\\ViewAllDish.cshtml",
+      "TargetPath": "Views\\Home\\ViewAllDish.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Paul2\\coding-dojo\\dojo-assignments\\c#\\ORM\\Entity_Framwork\\ChefsDishes\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"

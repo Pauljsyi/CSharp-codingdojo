@@ -30,6 +30,7 @@ public class HomeController : Controller
     [HttpPost("chef/create")]
     public IActionResult CreateChef(Chef newChef)
     {
+        // System.Console.WriteLine($"new chef!! -> {newChef.Birthdate}");
         if (ModelState.IsValid)
         {
             _context.Add(newChef);
@@ -44,6 +45,10 @@ public class HomeController : Controller
     public IActionResult Index()
     {
         List<Chef> AllChefs = _context.Chefs.ToList();
+        MyViewModel MyModel = new MyViewModel
+        {
+            AllChefs = _context.Chefs.Include(a => a.CreatedDishes).ToList()
+        };
         return View("Index", AllChefs);
     }
 
@@ -55,7 +60,8 @@ public class HomeController : Controller
         {
             AllChefs = _context.Chefs.ToList()
         };
-        return View("NewDishForm", MyModel);
+        ViewBag.AllChefs = _context.Chefs.ToList();
+        return View("NewDishForm");
     }
 
 
@@ -63,6 +69,11 @@ public class HomeController : Controller
     [HttpPost("dishes/create")]
     public IActionResult CreateDish(Dish newDish)
     {
+        
+        System.Console.WriteLine($"NEW DISH!!!!!!! ---->\n ChefId: {newDish.ChefId}\n DishId: {newDish.DishId}\n Dish Name: {newDish.DishName}\n # of Calories: {newDish.NumOfCalories}\n Tastiness: {newDish.Tastiness}");
+
+        // Doesn't Validate!
+        // NullReferenceException: Object reference not set to an instance of an object.
         if (ModelState.IsValid)
         {
             _context.Add(newDish);
@@ -71,6 +82,14 @@ public class HomeController : Controller
         }
         return View("NewDishForm");
 
+    }
+
+    [HttpGet("dishes")]
+    public IActionResult GetAllDishes()
+    {
+        List<Dish> AllDishes = _context.Dishes.ToList();
+        ViewBag.AllChefs = _context.Chefs.ToList();
+        return View("ViewAllDish", AllDishes);
     }
 
     public IActionResult Privacy()
