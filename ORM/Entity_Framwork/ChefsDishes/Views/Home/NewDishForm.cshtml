@@ -83,13 +83,13 @@
                     </select>
                     <span class="text-danger" asp-validation-for="Tastiness"></span>
                 </div>
-                    
+                
                
                 <div class="mb-3">
                     <label asp-for="ChefId">Chef Name</label>
                     <select class="form-control" asp-for="ChefId">
                         <option>Please select a chef</option>
-                        @* * await Html.PartialAsync("_ChefDropDown") * *@
+                        @* * await Html.PartialAsync("_ChefDropDown", Model.Chef) * *@
                         @foreach(Chef c in @ViewBag.AllChefs)
                         {
                             <option value="@c.ChefId">@c.FirstName @c.LastName</option>

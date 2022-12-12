@@ -79,8 +79,11 @@ public class HomeController : Controller
             _context.Add(newDish);
             _context.SaveChanges();
             return RedirectToAction("Index");
+        } else {
+            ViewBag.AllChefs = _context.Chefs.ToList();
+            return View("NewDishForm");
         }
-        return View("NewDishForm");
+        
 
     }
 
