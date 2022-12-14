@@ -1,0 +1,23 @@
+@model Category
+<h1 class="text-center mb-5">@Model.Name</h1>
+<div class="text-center d-flex">
+    <div class="container flex-1">
+        <h1>Products</h1>
+
+        @foreach (Association item in @Model.ByCategory)
+        {
+            if (item.Product != null)
+            {
+                <p>@item.Product.Name</p>
+            }
+        }
+    </div>
+    <div class="container">
+        <h1>Add a Product</h1>
+        @{
+            Association association = new Association();
+            association.CategoryId = Model.CategoryId;
+        }
+        @await Html.PartialAsync("_ProductDropdown", association)
+    </div>
+</div>

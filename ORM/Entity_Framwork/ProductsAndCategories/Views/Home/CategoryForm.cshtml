@@ -1,0 +1,26 @@
+
+@model Category
+<div class="text-center d-flex">
+    <div class="container flex-1">
+        <h1>Add a Category</h1>
+        <form asp-action="CreateCategory" asp-controller="Home" method="post">
+            <div class="form-container d-flex">
+                <label class="w-25" asp-for="Name"></label>
+                <input class="form-control" asp-for="Name">
+                <span class="text-danger flex-4" asp-validation-for="Name"></span>
+            </div>
+            <button class="btn btn-success">Submit</button>
+
+        </form>
+        
+    </div>
+    <div class="container flex-1">
+        <h1>Categories</h1>
+        @* @await Html.PartialAsync("_Products") *@
+        @foreach(Category item in @ViewBag.AllCategories)
+        {
+            <a class="d-flex justify-content-center" href="categories/@item.CategoryId">@item.Name</a>
+        }
+        
+    </div>
+</div>

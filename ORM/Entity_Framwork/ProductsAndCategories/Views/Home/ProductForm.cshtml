@@ -1,0 +1,36 @@
+﻿
+@model Product
+<div class="text-center d-flex">
+    <div class="container flex-1">
+        <h1>Add a Product</h1>
+        <form asp-action="CreateProduct" asp-controller="Home" method="post">
+            <div class="form-container d-flex">
+                <label class="w-25" asp-for="Name"></label>
+                <input class="form-control" asp-for="Name">
+                <span class="text-danger flex-4" asp-validation-for="Name"></span>
+            </div>
+            <div class="form-container d-flex">
+                <label class="w-25" asp-for="Description"></label>
+                <input class="form-control" asp-for="Description">
+                <span class="text-danger flex-4" asp-validation-for="Description"></span>
+            </div>
+            <div class="form-container d-flex">
+                <label class="w-25" asp-for="Price"></label>
+                <input class="form-control" asp-for="Price">
+                <span class="text-danger flex-4" asp-validation-for="Price"></span>
+            </div>
+            <button class="btn btn-success">Submit</button>
+
+        </form>
+        
+    </div>
+    <div class="container">
+        <h1>Products</h1>
+        
+        @foreach(Product item in @ViewBag.AllProducts)
+        {
+            <a class="d-flex justify-content-center" href="products/@item.ProductId">@item.Name</a>
+        }
+        
+    </div>
+</div>

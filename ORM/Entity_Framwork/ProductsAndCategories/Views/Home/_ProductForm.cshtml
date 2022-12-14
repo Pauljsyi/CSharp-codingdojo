@@ -1,0 +1,20 @@
+@model MyViewModel
+<form asp-action="CreateProduct" asp-controller="Home" method="post">
+            <div class="form-container d-flex">
+                <label class="w-25" asp-for="@Model.Product.Name"></label>
+                <input class="form-control" asp-for="@Model.Product.Name">
+                <span class="text-danger flex-4" asp-validation-for="@Model.Product.Name"></span>
+            </div>
+            <div class="form-container d-flex">
+                <label class="w-25" asp-for="@Model.Product.Description"></label>
+                <input class="form-control" asp-for="@Model.Product.Description">
+                <span class="text-danger flex-4" asp-validation-for="@Model.Product.Description"></span>
+            </div>
+            <div class="form-container d-flex">
+                <label class="w-25" asp-for="@Model.Product.Price"></label>
+                <input class="form-control" asp-for="@Model.Product.Price">
+                <span class="text-danger flex-4" asp-validation-for="@Model.Product.Price"></span>
+            </div>
+            <button class="btn btn-success">Submit</button>
+
+        </form>

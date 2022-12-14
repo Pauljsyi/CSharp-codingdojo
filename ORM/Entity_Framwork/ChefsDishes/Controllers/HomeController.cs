@@ -60,8 +60,8 @@ public class HomeController : Controller
         {
             AllChefs = _context.Chefs.ToList()
         };
-        ViewBag.AllChefs = _context.Chefs.ToList();
-        return View("NewDishForm");
+        // ViewBag.AllChefs = _context.Chefs.ToList();
+        return View("NewDishForm", MyModel);
     }
 
 

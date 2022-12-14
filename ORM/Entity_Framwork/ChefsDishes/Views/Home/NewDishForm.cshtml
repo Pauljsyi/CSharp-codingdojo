@@ -1,4 +1,4 @@
-    @* @model MyViewModel
+    @model MyViewModel
     
     <div class="row h-100 justify-content-center align-items-center">
         <div class="col-10 col-md-8 col-lg-6">
@@ -37,8 +37,8 @@
                     <label asp-for="@Model.Dish.ChefId">Chef Name</label>
                     <select class="form-control" asp-for="@Model.Dish.ChefId">
                         <option>Please select a chef</option>
-                        @await Html.PartialAsync("_ChefDropDown")
-                        <option value="1">Paul</option>
+                        @* @await Html.PartialAsync("_ChefDropDown") *@
+                        @* <option value="1">Paul</option> *@
                         @foreach(Chef c in Model.AllChefs)
                         {
                             <option value="@c.ChefId">@c.FirstName @c.LastName = @c.ChefId</option>
@@ -52,8 +52,8 @@
                 <button class="btn btn-success">Submit</button>
             </form>
         </div>
-    </div> *@
-        @model ChefsDishes.Models.Dish
+    </div>
+        @* @model ChefsDishes.Models.Dish
 
         <div class="row h-100 justify-content-center align-items-center">
         <div class="col-10 col-md-8 col-lg-6">
@@ -89,12 +89,12 @@
                     <label asp-for="ChefId">Chef Name</label>
                     <select class="form-control" asp-for="ChefId">
                         <option>Please select a chef</option>
-                        @* * await Html.PartialAsync("_ChefDropDown", Model.Chef) * *@
+                        * await Html.PartialAsync("_ChefDropDown", Model.Chef) *
                         @foreach(Chef c in @ViewBag.AllChefs)
                         {
                             <option value="@c.ChefId">@c.FirstName @c.LastName</option>
                         }
-                        @* <option value="1">Paul</option> *@
+                        <option value="1">Paul</option>
 
                     </select>
                     <span class="text-danger" asp-validation-for="ChefId"></span>
@@ -105,4 +105,4 @@
                 <button class="btn btn-success">Submit</button>
             </form>
         </div>
-    </div>
+    </div> *@
