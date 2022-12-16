@@ -11,8 +11,8 @@ using WeddingPlanner.Models;
 namespace WeddingPlanner.Migrations
 {
     [DbContext(typeof(MyContext))]
-    [Migration("20221215030924_SecondMigration")]
-    partial class SecondMigration
+    [Migration("20221216014047_FirstMigration")]
+    partial class FirstMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -20,6 +20,27 @@ namespace WeddingPlanner.Migrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "6.0.3")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
+
+            modelBuilder.Entity("WeddingPlanner.Models.Rsvp", b =>
+                {
+                    b.Property<int>("RsvpId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("WeddingId")
+                        .HasColumnType("int");
+
+                    b.HasKey("RsvpId");
+
+                    b.HasIndex("UserId");
+
+                    b.HasIndex("WeddingId");
+
+                    b.ToTable("Rsvps");
+                });
 
             modelBuilder.Entity("WeddingPlanner.Models.User", b =>
                 {
@@ -67,12 +88,14 @@ namespace WeddingPlanner.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime(6)");
 
-                    b.Property<int?>("Date")
-                        .IsRequired()
-                        .HasColumnType("int");
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime(6)");
 
                     b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("datetime(6)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
 
                     b.Property<string>("WedderOne")
                         .IsRequired()
@@ -85,6 +108,25 @@ namespace WeddingPlanner.Migrations
                     b.HasKey("WeddingId");
 
                     b.ToTable("Weddings");
+                });
+
+            modelBuilder.Entity("WeddingPlanner.Models.Rsvp", b =>
+                {
+                    b.HasOne("WeddingPlanner.Models.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("WeddingPlanner.Models.Wedding", "Wedding")
+                        .WithMany()
+                        .HasForeignKey("WeddingId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+
+                    b.Navigation("Wedding");
                 });
 #pragma warning restore 612, 618
         }

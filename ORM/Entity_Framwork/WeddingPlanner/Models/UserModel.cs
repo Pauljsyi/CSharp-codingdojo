@@ -33,6 +33,10 @@ public class User
     [Compare("Password")]
     [Display(Name = "Confirm Password")]
     public string Confirm { get; set; }
+
+
+    // Navigation Property
+    public List<Rsvp> RsvpedWeddings { get; set; } = new List<Rsvp>();
 }
 
 public class UniqueEmailAttribute : ValidationAttribute

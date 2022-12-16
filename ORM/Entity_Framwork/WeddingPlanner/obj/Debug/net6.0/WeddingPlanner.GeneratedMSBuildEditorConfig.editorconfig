@@ -15,12 +15,32 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Paul2\coding-dojo\dojo-assignments\c#\ORM\Entity_Framwork\WeddingPlanner
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Paul2/coding-dojo/dojo-assignments/c\#/ORM/Entity_Framwork/WeddingPlanner/Views/Home/EditWedding.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFZGl0V2VkZGluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Paul2/coding-dojo/dojo-assignments/c\#/ORM/Entity_Framwork/WeddingPlanner/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Paul2/coding-dojo/dojo-assignments/c\#/ORM/Entity_Framwork/WeddingPlanner/Views/Home/PlanWedding.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQbGFuV2VkZGluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Paul2/coding-dojo/dojo-assignments/c\#/ORM/Entity_Framwork/WeddingPlanner/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Paul2/coding-dojo/dojo-assignments/c\#/ORM/Entity_Framwork/WeddingPlanner/Views/Home/RSVPError.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSU1ZQRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Paul2/coding-dojo/dojo-assignments/c\#/ORM/Entity_Framwork/WeddingPlanner/Views/Home/ShowAllWeddings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaG93QWxsV2VkZGluZ3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Paul2/coding-dojo/dojo-assignments/c\#/ORM/Entity_Framwork/WeddingPlanner/Views/Home/ShowSingleWedding.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaG93U2luZ2xlV2VkZGluZy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Paul2/coding-dojo/dojo-assignments/c\#/ORM/Entity_Framwork/WeddingPlanner/Views/Home/_Login.cshtml]

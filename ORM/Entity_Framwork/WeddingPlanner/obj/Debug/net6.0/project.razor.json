@@ -16298,6 +16298,16 @@
   "RootNamespace": "WeddingPlanner",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\Paul2\\coding-dojo\\dojo-assignments\\c#\\ORM\\Entity_Framwork\\WeddingPlanner\\Views\\Home\\ShowSingleWedding.cshtml",
+      "TargetPath": "Views\\Home\\ShowSingleWedding.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Paul2\\coding-dojo\\dojo-assignments\\c#\\ORM\\Entity_Framwork\\WeddingPlanner\\Views\\Home\\PlanWedding.cshtml",
+      "TargetPath": "Views\\Home\\PlanWedding.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Paul2\\coding-dojo\\dojo-assignments\\c#\\ORM\\Entity_Framwork\\WeddingPlanner\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
@@ -16305,6 +16315,11 @@
     {
       "FilePath": "c:\\Users\\Paul2\\coding-dojo\\dojo-assignments\\c#\\ORM\\Entity_Framwork\\WeddingPlanner\\Views\\Home\\_Login.cshtml",
       "TargetPath": "Views\\Home\\_Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Paul2\\coding-dojo\\dojo-assignments\\c#\\ORM\\Entity_Framwork\\WeddingPlanner\\Views\\Home\\EditWedding.cshtml",
+      "TargetPath": "Views\\Home\\EditWedding.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16323,6 +16338,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Paul2\\coding-dojo\\dojo-assignments\\c#\\ORM\\Entity_Framwork\\WeddingPlanner\\Views\\Home\\ShowAllWeddings.cshtml",
+      "TargetPath": "Views\\Home\\ShowAllWeddings.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Paul2\\coding-dojo\\dojo-assignments\\c#\\ORM\\Entity_Framwork\\WeddingPlanner\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
@@ -16335,6 +16355,11 @@
     {
       "FilePath": "c:\\Users\\Paul2\\coding-dojo\\dojo-assignments\\c#\\ORM\\Entity_Framwork\\WeddingPlanner\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Paul2\\coding-dojo\\dojo-assignments\\c#\\ORM\\Entity_Framwork\\WeddingPlanner\\Views\\Home\\RSVPError.cshtml",
+      "TargetPath": "Views\\Home\\RSVPError.cshtml",
       "FileKind": "mvc"
     }
   ],

@@ -16,13 +16,22 @@ public class Wedding
     public string WedderTwo { get; set; }
 
     [Required]
-    [Range(2022, 9000)]
-    public int? Date { get; set; }
+    [DataType(DataType.Date)]
+    [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
+    public DateTime Date { get; set; }
 
     [Required]
     [MinLength(5, ErrorMessage = "Address must be greater than 5 characters")]
     public string Address { get; set; }
 
+    [Required]
+    public int UserId { get; set; }
+
     public DateTime CreatedAt { get; set; } = DateTime.Now;
     public DateTime UpdatedAt { get; set; } = DateTime.Now;
+
+
+    // Navigation Properties
+
+    public List<Rsvp> Guests { get; set; } = new List<Rsvp>();
 }
