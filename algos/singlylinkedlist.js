@@ -278,7 +278,15 @@ class SinglyLinkedList {
    *    or null when the end of the list has been reached.
    * @returns {boolean}
    */
-  containsRecursive(val, current = this.head) {}
+  containsRecursive(val, current = this.head) {
+    if (current === null) {
+      return false;
+    }
+    if (current.data === val) {
+      return true;
+    }
+    return this.containsRecursive(val, current.next);
+  }
 
   // EXTRA
   /**
@@ -291,7 +299,21 @@ class SinglyLinkedList {
    *    max integer as it's data.
    * @returns {?number} The max int or null if none.
    */
-  recursiveMax(runner = this.head, maxNode = this.head) {}
+  recursiveMax(runner = this.head, maxNode = this.head) {
+    if (this.head === null) {
+      return null;
+    }
+
+    if (runner === null) {
+      return maxNode.data;
+    }
+
+    if (runner.data > maxNode.data) {
+      maxNode = runner;
+    }
+
+    return this.recursiveMax(runner.next, maxNode);
+  }
 
   // 11/29
 
@@ -334,7 +356,26 @@ class SinglyLinkedList {
    * - Space: (?).
    * @returns {number|NaN} The average of the node's data.
    */
-  average() {}
+  average() {
+    let runner = this.head;
+    let sum = 0;
+    let cnt = 0;
+
+    while (runner) {
+      cnt++;
+      sum += runner.data;
+      runner = runner.next;
+    }
+
+    /**
+     * Dividing by 0 will give you NaN (Not a Number), so an empty list
+     * will return NaN in this case, it may make sense to allow NaN to be
+     * returned, because the average of an empty list doesn't make sense and
+     * it could be misleading to return 0 since 0 is the average of any
+     * list with a sum of 0 (due to negatives or all zeros).
+     */
+    return sum / cnt;
+  }
 
   // 11/28
 

@@ -8,65 +8,65 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ProductsAndCategories
 build_property.RootNamespace = ProductsAndCategories
-build_property.ProjectDir = C:\Users\Paul2\coding-dojo\dojo-assignments\c#\ORM\Entity_Framwork\ProductsAndCategories\
+build_property.ProjectDir = c:\Users\Paul2\coding-dojo\dojo-assignments\c#\ORM\Entity_Framwork\ProductsAndCategories\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Paul2\coding-dojo\dojo-assignments\c#\ORM\Entity_Framwork\ProductsAndCategories
+build_property.MSBuildProjectDirectory = c:\Users\Paul2\coding-dojo\dojo-assignments\c#\ORM\Entity_Framwork\ProductsAndCategories
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Paul2/coding-dojo/dojo-assignments/c\#/ORM/Entity_Framwork/ProductsAndCategories/Views/Home/CategoryForm.cshtml]
+[c:/Users/Paul2/coding-dojo/dojo-assignments/c\#/ORM/Entity_Framwork/ProductsAndCategories/Views/Home/CategoryForm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYXRlZ29yeUZvcm0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paul2/coding-dojo/dojo-assignments/c\#/ORM/Entity_Framwork/ProductsAndCategories/Views/Home/Privacy.cshtml]
+[c:/Users/Paul2/coding-dojo/dojo-assignments/c\#/ORM/Entity_Framwork/ProductsAndCategories/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paul2/coding-dojo/dojo-assignments/c\#/ORM/Entity_Framwork/ProductsAndCategories/Views/Home/ProductForm.cshtml]
+[c:/Users/Paul2/coding-dojo/dojo-assignments/c\#/ORM/Entity_Framwork/ProductsAndCategories/Views/Home/ProductForm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9kdWN0Rm9ybS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paul2/coding-dojo/dojo-assignments/c\#/ORM/Entity_Framwork/ProductsAndCategories/Views/Home/ShowCategory.cshtml]
+[c:/Users/Paul2/coding-dojo/dojo-assignments/c\#/ORM/Entity_Framwork/ProductsAndCategories/Views/Home/ShowCategory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaG93Q2F0ZWdvcnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paul2/coding-dojo/dojo-assignments/c\#/ORM/Entity_Framwork/ProductsAndCategories/Views/Home/ShowProduct.cshtml]
+[c:/Users/Paul2/coding-dojo/dojo-assignments/c\#/ORM/Entity_Framwork/ProductsAndCategories/Views/Home/ShowProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaG93UHJvZHVjdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paul2/coding-dojo/dojo-assignments/c\#/ORM/Entity_Framwork/ProductsAndCategories/Views/Home/_CategoryDropdown.cshtml]
+[c:/Users/Paul2/coding-dojo/dojo-assignments/c\#/ORM/Entity_Framwork/ProductsAndCategories/Views/Home/_CategoryDropdown.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfQ2F0ZWdvcnlEcm9wZG93bi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paul2/coding-dojo/dojo-assignments/c\#/ORM/Entity_Framwork/ProductsAndCategories/Views/Home/_ProductDropdown.cshtml]
+[c:/Users/Paul2/coding-dojo/dojo-assignments/c\#/ORM/Entity_Framwork/ProductsAndCategories/Views/Home/_ProductDropdown.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfUHJvZHVjdERyb3Bkb3duLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paul2/coding-dojo/dojo-assignments/c\#/ORM/Entity_Framwork/ProductsAndCategories/Views/Home/_ProductForm.cshtml]
+[c:/Users/Paul2/coding-dojo/dojo-assignments/c\#/ORM/Entity_Framwork/ProductsAndCategories/Views/Home/_ProductForm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfUHJvZHVjdEZvcm0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paul2/coding-dojo/dojo-assignments/c\#/ORM/Entity_Framwork/ProductsAndCategories/Views/Home/_ProductsCategories.cshtml]
+[c:/Users/Paul2/coding-dojo/dojo-assignments/c\#/ORM/Entity_Framwork/ProductsAndCategories/Views/Home/_ProductsCategories.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfUHJvZHVjdHNDYXRlZ29yaWVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paul2/coding-dojo/dojo-assignments/c\#/ORM/Entity_Framwork/ProductsAndCategories/Views/Shared/Error.cshtml]
+[c:/Users/Paul2/coding-dojo/dojo-assignments/c\#/ORM/Entity_Framwork/ProductsAndCategories/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paul2/coding-dojo/dojo-assignments/c\#/ORM/Entity_Framwork/ProductsAndCategories/Views/Shared/_ValidationScriptsPartial.cshtml]
+[c:/Users/Paul2/coding-dojo/dojo-assignments/c\#/ORM/Entity_Framwork/ProductsAndCategories/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paul2/coding-dojo/dojo-assignments/c\#/ORM/Entity_Framwork/ProductsAndCategories/Views/_ViewImports.cshtml]
+[c:/Users/Paul2/coding-dojo/dojo-assignments/c\#/ORM/Entity_Framwork/ProductsAndCategories/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paul2/coding-dojo/dojo-assignments/c\#/ORM/Entity_Framwork/ProductsAndCategories/Views/_ViewStart.cshtml]
+[c:/Users/Paul2/coding-dojo/dojo-assignments/c\#/ORM/Entity_Framwork/ProductsAndCategories/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paul2/coding-dojo/dojo-assignments/c\#/ORM/Entity_Framwork/ProductsAndCategories/Views/Shared/_Layout.cshtml]
+[c:/Users/Paul2/coding-dojo/dojo-assignments/c\#/ORM/Entity_Framwork/ProductsAndCategories/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-8d2lq70uyv
